@@ -11,7 +11,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav row">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Websites studenten</a>
+                <a class="nav-link" href="#">Websites studentenaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</a>
             </li>
 
             <li class="nav-item">
