@@ -15,6 +15,6 @@
     </head>
     <body class="container">
        @include('template.navbar')
-
+@yield('content')
     </body>
 </html>
