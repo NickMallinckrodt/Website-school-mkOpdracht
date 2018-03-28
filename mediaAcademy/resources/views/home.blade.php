@@ -1,1 +1,3 @@
-@include("template.template")
+@extends("template.template")
+
+@yield('title','Dit is een test')
