@@ -3,7 +3,7 @@
 @section('title','Dit is een test')
 
 @section('content')
- <h1>prachtg project</h1>
+ <h1>LARS HIJ ZEGT WHOOPS LOOKS LIKE SOMETHING WENT WRONG</h1>
 
-<i class="fas fa-code"></i> 
+<i class="fas fa-code"></i>
 @endsection
