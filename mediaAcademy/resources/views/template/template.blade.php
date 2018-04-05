@@ -15,7 +15,15 @@
     </head>
     <body>
         <div class="container">
-            @include('template.navbar')
+          <div class="row">
+
+            <div class="col-12">
+                 @include('template.navbar')
+            </div>
+
+
+
+          </div>
         </div>
         @include('template.banner')
 
