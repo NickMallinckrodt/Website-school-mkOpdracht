@@ -10003,8 +10003,9 @@ body {
 }
 
 .banner {
-  height: 300px;
-  background: url("https://pbs.twimg.com/profile_images/2435763356/image_400x400.jpg") 100vw 300px;
+  height: 400px;
+  background-repeat: repeat-y;
+  background: url("https://pbs.twimg.com/profile_images/2435763356/image_400x400.jpg") 100vw 400px;
 }
 
 .navbar-laravel {

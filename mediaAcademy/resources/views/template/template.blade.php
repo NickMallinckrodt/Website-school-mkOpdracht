@@ -10,6 +10,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="/css/app.css">
+        <link rel="stylesheet" href="{{ asset('css/style.css')}}">
         <!-- Styles -->
 
     </head>
@@ -24,10 +25,24 @@
 
 
           </div>
-        </div>
-        @include('template.banner')
+          <div class="row">
+            <div class="col-12">
+              @include('template.banner')
 
-        @yield('content')
+
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="col-12">
+
+              @yield('content')
+            </div>
+
+          </div>
+        </div>
+    
 
 <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
     </body>
