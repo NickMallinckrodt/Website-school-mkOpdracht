@@ -8,7 +8,15 @@
 
   <div class="row">
       <div class="col">
-          Hier komen de opleidingen te staan
+          <h1>Applicatie- & Mediaontwikkelaar</h1>
+            <p></p>
+          <hr>
+
+          <h1>Media Manager</h1>
+
+          <hr>
+
+          <h1>Media Vormgevers</h1>
       </div>
   </div>
 
