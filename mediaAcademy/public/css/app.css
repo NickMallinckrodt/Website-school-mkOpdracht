@@ -10002,9 +10002,14 @@ body {
   width: 50px;
 }
 
+.banner {
+  height: 400px;
+  background-repeat: repeat-y;
+  background: url("https://pbs.twimg.com/profile_images/2435763356/image_400x400.jpg") 100vw 400px;
+}
+
 .navbar-laravel {
   background-color: #fff;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
-
