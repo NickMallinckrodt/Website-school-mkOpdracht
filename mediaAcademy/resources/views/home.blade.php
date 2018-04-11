@@ -1,6 +1,6 @@
 @extends("template.template")
 
-@section('title','Dit is een test')
+@section('title','Media Academy - Home')
 
 @section('content')
 
@@ -38,7 +38,7 @@
           </div>
 
           <div class="col-2">
-              <button type="button" name="button">Opleidingen</button>
+              <img src="" alt="Opleiding foto en link">
           </div>
 
           <div class="col">
@@ -46,7 +46,7 @@
           </div>
 
           <div class="col">
-                <button type="button" name="button">Docenten</button>
+                <img src="" alt="Docenten foto en link">
           </div>
 
           <div class="col">
@@ -54,7 +54,7 @@
           </div>
 
           <div class="col">
-              <button type="button" name="button">Websites studenten</button>
+              <img src="" alt="Websites studenten en link">
           </div>
 
           <div class="col">

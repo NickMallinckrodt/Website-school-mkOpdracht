@@ -1,6 +1,5 @@
 @extends("template.template")
 
-
 @section('title', 'Media Academy - Docenten')
 
 
@@ -18,7 +17,7 @@
             Integer massa turpis, interdum vel ligula ac, sodales tristique augue.
              Nunc et mauris semper, egestas sem quis, tincidunt ante. Duis at lorem eleifend quam aliquam pharetra eget quis dui.
              Donec placerat turpis commodo, gravida massa a, tincidunt augue. Vivamus vel volutpat diam.
-          
+
         </div>
 
     </div>
