@@ -18,3 +18,5 @@ Route::get('/docenten' , 'DocentenController@index')->name('docenten');
 Route::get('/opleidingen', 'OpleidingController@index')->name('opleidingen');
 
 Route::get('/applicatieontwikkelaar', 'OpleidingController@applicatie')->name('applicatie');
+
+Route::get('/mediamanager', 'MediamanagerController@index')->name('mediamanager');
