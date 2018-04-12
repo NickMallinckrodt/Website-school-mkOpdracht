@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class OpleidingController extends Controller
+class MediamanagerController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,12 +13,7 @@ class OpleidingController extends Controller
      */
     public function index()
     {
-        return view('opleidingen');
-    }
-
-    public function applicatie(){
-
-      return view('applicatieontwikkelaar');
+        return view('mediamanager');
     }
 
     /**
