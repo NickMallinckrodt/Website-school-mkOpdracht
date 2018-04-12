@@ -16,6 +16,11 @@ class OpleidingController extends Controller
         return view('opleidingen');
     }
 
+    public function applicatie(){
+
+      return view('applicatieontwikkelaar');
+    }
+
     /**
      * Show the form for creating a new resource.
      *
