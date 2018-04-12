@@ -26,7 +26,7 @@
       </li>
 
             <li class="nav-item active">
-                <a class="nav-link " href="#">Websites studenten</a>
+                <a class="nav-link " href="{{ route('studenten-websites') }}">Websites studenten</a>
             </li>
         </ul>
     </div>
