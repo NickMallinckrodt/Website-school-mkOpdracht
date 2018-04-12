@@ -16,3 +16,5 @@ Route::get('/', 'IndexController@index')->name('index');
 Route::get('/docenten' , 'DocentenController@index')->name('docenten');
 
 Route::get('/opleidingen', 'OpleidingController@index')->name('opleidingen');
+
+Route::get('/studenten-websites', 'websitesStudenten@index')->name('studenten-websites');
