@@ -50,6 +50,36 @@
           Bij ons krijg je alle ruimte om te laten zien wie je bent. Bovendien ontdek je zo het beste waar jouw kracht ligt.
           Met de juiste kennis en tips helpen wij je nóg beter te worden.</p>
 
+        <h3>Veel praktijk</h3>
+        <p>In het Landschap Vormgeving & Entertainment mag je veel oefenen en ervaren. Soms doe je dat met schoolopdrachten.
+           Maar je gaat ook regelmatig aan de slag met opdrachten van echte klanten.
+           Op die manier leer je met opdrachtgevers om te gaan en hoe belangrijk het is om rekening te houden met bijvoorbeeld deadlines, budgetten en promotie.</p>
+
+        <h3>Toelating</h3>
+        <h6>Vooropleidingseisen</h6>
+
+        <p>
+        <ul>
+          <li>Een vmbo-diploma gemengde leerweg (gl) of theoretische leerweg (tl).</li>
+          <li>Heb je een andere vooropleiding (met diploma), dan bekijken we tijdens het plaatsingsgesprek onder welke voorwaarden je eventueel aan de opleiding kunt beginnen.</li>
+        </ul>
+
+      <br>
+    <h6>Verplichte intakeactiviteiten</h6>
+    <ul>
+      <li>Individueel Plaatsingsgesprek</li>
+      <li>Meeloopdag</li>
+      <li>Aanvullende opdracht</li>
+    </ul>
+</p>
+
+    <h3>Studiekosten</h3>
+    <p>Naast het lesgeld heb je kosten voor lesmateriaal en betaal je een bijdrage voor voorzieningen en activiteiten zoals:
+       excursies, lesmateriaal en verwerkingsmateriaal voor producten die je maakt. Dit bedrag is exclusief leermiddelen zoals boeken,
+       een laptop en de studiekosten die zijn vastgesteld door het Ministerie van OCW.
+       Voor meer informatie over studiekosten voor deze opleiding kun je bellen naar 088-850 78 00.</p>
+
+
     </div>
   </div>
 
