@@ -6,6 +6,10 @@
 
 <div class="col content ">
 <br>
+
+<div class="row">
+<h1 style="text-align: center;">Mediamanager</h1>
+</div>
   <div class="row">
 
 
@@ -24,6 +28,16 @@
         <button type="button" class="btn btn-success" name="button">Brochure aanvragen</button>
     </div>
 
+  </div>
+
+  <div class="row">
+    <div class="col">
+          
+    </div>
+
+    <div class="col">
+
+    </div>
   </div>
 
 </div>
