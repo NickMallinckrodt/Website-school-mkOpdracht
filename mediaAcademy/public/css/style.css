@@ -7,3 +7,19 @@
 .header{
   text-align: center;
 }
+
+.style_ul{
+
+  list-style-type: none;
+}
+
+.media_img{
+  max-width:600px;
+  max-height: 400px;
+
+}
+
+.button{
+  width: 200px;
+height: 55px;
+}
