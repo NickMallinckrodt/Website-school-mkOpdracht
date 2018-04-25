@@ -20,8 +20,8 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="{{ route('applicatie')}}">Applicatie- & Mediaontwikkelaar</a>
-          <a class="dropdown-item" href="{{ route('mediamanager')}}">Mediamanagers</a>
-          <a class="dropdown-item" href="{{ route('mediavormgever')}}">Mediavormgevers</a>
+          <a class="dropdown-item" href="{{ route('mediamanager')}}">Mediamanager</a>
+          <a class="dropdown-item" href="{{ route('mediavormgever')}}">Mediavormgever</a>
         </div>
       </li>
 
