@@ -11,7 +11,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav row">
             <li class="nav-item active">
-                <a class="nav-link" href=" {{ route('opleidingen') }}">Opleidingen</a>
+                <a class="nav-link" href=" {{ route('docenten') }}">Docenten</a>
             </li>
 
             <li class="nav-item dropdown active">
@@ -20,8 +20,8 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="{{ route('applicatie')}}">Applicatie- & Mediaontwikkelaar</a>
-          <a class="dropdown-item" href="{{ route('mediamanager')}}">Mediamanagers</a>
-          <a class="dropdown-item" href="#">Mediavormgevers</a>
+          <a class="dropdown-item" href="{{ route('mediamanager')}}">Mediamanager</a>
+          <a class="dropdown-item" href="{{ route('mediavormgever')}}">Mediavormgever</a>
         </div>
       </li>
 

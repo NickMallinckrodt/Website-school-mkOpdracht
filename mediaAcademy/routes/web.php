@@ -23,3 +23,5 @@ Route::get('/applicatieontwikkelaar', 'OpleidingController@applicatie')->name('a
 Route::get('/mediamanager', 'MediamanagerController@index')->name('mediamanager');
 
 Route::get('/studenten-websites', 'websitesStudenten@index')->name('studenten-websites');
+
+Route::get('/mediavormgever' , 'MediavormgeverController@index')->name('mediavormgever');
