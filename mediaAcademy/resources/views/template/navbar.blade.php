@@ -11,7 +11,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav row">
             <li class="nav-item active">
-                <a class="nav-link" href=" {{ route('opleidingen') }}">Opleidingen</a>
+                <a class="nav-link" href=" {{ route('docenten') }}">Docenten</a>
             </li>
 
             <li class="nav-item dropdown active">
