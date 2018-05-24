@@ -9995,7 +9995,8 @@ a.text-dark:focus {
 }
 
 body {
-  background: url("/img/background.jpg") 100vw 100vh fixed;
+	background-color: #dc3545;
+  // background: url("/img/background.jpg") 100vw 100vh fixed;
 }
 
 .navbar-brand img {
@@ -10017,5 +10018,29 @@ img.website-student {
   width: 100%;
   border: 3px solid #ff615f;
   border-radius: 3px;
+}
+
+#exTab1 .tab-content {
+  color: white;
+  background-color: #428bca;
+  padding: 5px 15px;
+}
+
+/* remove border radius for the tab */
+
+#exTab1 .nav-pills > li > a {
+  border-radius: 0;
+}
+
+/* change border radius for the tab , apply corners on top*/
+
+#exTab3 .nav-pills > li > a {
+  border-radius: 4px 4px 0 0;
+}
+
+#exTab3 .tab-content {
+  color: white;
+  background-color: #428bca;
+  padding: 5px 15px;
 }
 
