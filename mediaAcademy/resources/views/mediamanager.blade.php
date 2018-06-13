@@ -77,7 +77,19 @@
 
         <h1 style="">De spin in het web bij een campagne</h1>
         <br>
-            <h3>Beroep</h3>
+
+        <div id="exTab2" class="container">
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a  href="#1" data-toggle="tab"><h3>Beroep &nbsp;</h3></a>
+                </li>
+                <li><a href="#2" data-toggle="tab"><h3>Opleidingsinformatie</h3></a>
+                </li>
+
+            </ul>
+
+            <div class="tab-content ">
+                <div class="tab-pane active" id="1">
             <p>Websites, een online campagne, een speciale app, advertenties: bedrijven zetten vaak veel middelen tegelijkertijd in om hun doel en doelgroep te bereiken.
               Als mediamanager ben jij bij zo'n uitdagend project of campagne de spin in het web. Jij zorgt dat alle (multimedia-)specialisten goed samenwerken en dat iedereen
               een zo goed mogelijk product oplevert.</p>
@@ -103,8 +115,8 @@
               Je bent een kei in plannen en organiseren en je legt gemakkelijk contact. Je bent heel precies en rondt alles ook financieel en administratief perfect af.
               Belangrijk is dat je ook innovatief en ondernemend bent.</p>
 
-            <h1>Opleidingsinformatie</h1>
-            <br>
+            </div>
+              <div class="tab-pane" id="2">
             <h3>Volop ruimte voor je eigen ideeën</h3>
             <p>Heb je zelf ideeën voor een evenement, theaterproductie, website of ander project? Dan staan we daar natuurlijk ook voor open! We helpen je graag op weg bij het uitvoeren van je ideeën.
                Bij ons krijg je alle ruimte om te laten zien wie je bent. Bovendien ontdek je zo het beste waar jouw kracht ligt.
@@ -137,7 +149,9 @@
 
     </div>
 
-
+</div>
+</div>
+</div>
 
 
 </div>

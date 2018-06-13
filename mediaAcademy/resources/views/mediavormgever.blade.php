@@ -76,9 +76,21 @@
   <div class="row">
     <div class="col">
 
-        <h1 style="">Drukwerk, websites, social media, apps en (serious games)</h1>
+      <div id="exTab2" class="container">
+          <ul class="nav nav-tabs">
+              <li class="active">
+                  <a  href="#1" data-toggle="tab"><h3>Beroep &nbsp;</h3></a>
+              </li>
+              <li><a href="#2" data-toggle="tab"><h3>Opleidingsinformatie</h3></a>
+              </li>
+
+          </ul>
+
+          <div class="tab-content ">
+              <div class="tab-pane active" id="1">
+
         <br>
-            <h3>Beroep</h3>
+
             <p>Veel organisaties en bedrijven huren creatieve professionals in om hun naamsbekendheid te vergoten, hun imago te verbeteren of meer producten te verkopen.
               Als mediavormgever doe je dit bijvoorbeeld met opvallende advertenties en brochures.
               Daarnaast maak je digitale middelen, zoals websites, social media, apps, en (serious) games.
@@ -102,8 +114,9 @@
             <p>Dit vak vraagt om creatieve mensen met gevoel voor vormgeving en interesse in nieuwe media.
               Vaak werk je met een computer, en dus moet je ook je technische talenten ontwikkelen.
               Je kunt zelfstandig werken, je kunt tegen tijdsdruk en je krijgt anderen enthousiast voor jouw product.</p>
+</div>
+            <div class="tab-pane" id="2">
 
-            <h1>Opleidingsinformatie</h1>
             <br>
 
             <h3>Volop ruimte voor je eigen ideeën</h3>
@@ -162,9 +175,9 @@
             </ul>
 
     </div>
-
-
-
+</div>
+</div>
+</div>
 
 </div>
 
