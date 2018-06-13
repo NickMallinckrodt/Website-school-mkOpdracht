@@ -7,7 +7,7 @@
 
 
   <div class="container">
-      <div class="row">
+      <div class="row bg-white">
 
         <div class="col-2">
 
@@ -17,12 +17,7 @@
               <br>
             <h1 class="header">Media Academy</h1>
             <hr>
-                <p> Donec quam velit, pharetra nec consequat sit amet, placerat eget dolor. Vivamus imperdiet arcu ipsum, ac eleifend est hendrerit sit amet.
-                    Aliquam at ante sed odio imperdiet tristique ac quis ipsum. Quisque scelerisque justo ullamcorper risus ultricies euismod.
-                    Nullam ac felis ut ligula aliquam fringilla. Nunc consectetur turpis rutrum, auctor tellus vitae, scelerisque tortor.
-                    Nunc imperdiet pellentesque nisl, a accumsan purus iaculis laoreet.
-                    Praesent nisi mi, lobortis quis ipsum in, accumsan facilisis ligula. Donec egestas gravida sapien nec aliquet.
-                    Praesent posuere ex vestibulum, mollis mauris quis, ornare tellus.
+                <p>
 
                 </p>
                   <br>
@@ -31,37 +26,76 @@
 
 
       </div>
+  </div>
 
-    <div class="row content">
+  <div class="tile_container">
 
-          <div class="col">
-                leeg
-          </div>
+    <div class="row bg-white">
+        <div class="col-md-6 col-sm-8">
+            <a href="{{route('mediamanager')}}">
+                <div class="tile_image-container">
+                    <img src={{asset('img/mediamanager.jpg')}} alt="Opleiding" class="home_img">
 
-          <div class="col-2">
-              <img src="" alt="Opleiding foto en link">
-          </div>
+                    <div class="media_label">
+                        <div class="media_tile">
+                            <span class="media_tile_content">
+                                 BOL
+                                <small>|</small>
+                                 Niveau 4
+                                <small>|</small>
+                            </span>
+                        </div>
+                    </div>
 
-          <div class="col">
-              leeg
-          </div>
+                     <div class="media_tile_bar"></div>
+                </div>
+            </a>
+        </div>
 
-          <div class="col">
-                <img src="" alt="Docenten foto en link">
-          </div>
+        <div class="col-md-6 col-sm-8">
+            <a href="{{route('mediavormgever')}}">
+                <div class="tile_image-container">
+                    <img src={{asset('img/mediavormgever.jpg')}} alt="Opleiding" class="home_img">
 
-          <div class="col">
-            leeg
-          </div>
+                    <div class="media_label">
+                        <div class="media_tile">
+                            <span class="media_tile_content">
+                                 BOL
+                                <small>|</small>
+                                 Niveau 4
+                                <small>|</small>
+                            </span>
+                        </div>
+                    </div>
 
-          <div class="col">
-              <img src="" alt="Websites studenten en link">
-          </div>
+                    <div class="media_tile_bar"></div>
+                </div>
+            </a>
+        </div>
 
-          <div class="col">
-              leeg
-          </div>
+        <div class="col-md-6 col-sm-8">
+            <a href="{{route('applicatie')}}">
+                <div class="tile_image-container">
+                    <img src={{asset('img/applicatie.jpg')}} alt="Opleiding" class="home_img">
+
+                    <div class="media_label">
+                        <div class="media_tile">
+                            <span class="media_tile_content">
+                                 BOL
+                                <small>|</small>
+                                 Niveau 4
+                                <small>|</small>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="media_tile_bar"></div>
+                </div>
+            </a>
+        </div>
 
     </div>
   </div>
+
+
 @endsection
