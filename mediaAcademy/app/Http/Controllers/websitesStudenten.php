@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Classes;
+use App\Student_Website;
+use App\StudentWebsite;
 use Illuminate\Http\Request;
 
 class websitesStudenten extends Controller
@@ -13,45 +16,61 @@ class websitesStudenten extends Controller
      */
     public function index()
     {
-        $websites = array(
-            array("Klas"=>"APP16A1","Site"=>array(
-                array('Name'=> "LVoort", "Image" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-                array('Name'=> "LVoort", "Image" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-                array('Name'=> "LVoort", "Image" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-                array('Name'=> "LVoort", "Image" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-                array('Name'=> "LVoort", "Image" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-                array('Name'=> "LVoort", "Image" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"))
-            ),
-            array("Klas"=>"APP16A2","Site"=>array(
-                array('Name'=> "LVoort", "Image" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-                array('Name'=> "LVoort", "Image" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-                array('Name'=> "LVoort", "Image" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-                array('Name'=> "LVoort", "Image" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-                array('Name'=> "LVoort", "Image" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-                array('Name'=> "LVoort", "Image" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-                array('Name'=> "LVoort", "Image" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-                array('Name'=> "LVoort", "Image" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-                array('Name'=> "LVoort", "Image" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-                array('Name'=> "LVoort", "Image" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-                array('Name'=> "LVoort", "Image" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-                array('Name'=> "LVoort", "Image" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"))
-            ),
-            array("Klas"=>"APP17","Site"=>array(
-                array('Name'=> "LVoort", "Image" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-                array('Name'=> "LVoort", "Image" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-                array('Name'=> "LVoort", "Image" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-                array('Name'=> "LVoort", "Image" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-                array('Name'=> "LVoort", "Image" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-                array('Name'=> "LVoort", "Image" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-                array('Name'=> "LVoort", "Image" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-                array('Name'=> "LVoort", "Image" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-                array('Name'=> "LVoort", "Image" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"))
-            ),
+        $classes = Classes::orderByRaw("class", "DESC")->get();// haal de klas namen op
+
+        $website=[];// maak een nieuwe array aan
+
+        foreach ($classes as $class){
+            $temp = [];// maak een nieuwe array aan
+            $new = StudentWebsite::where('class', $class->class)->orderByRaw("username DESC")->get();// haal de websites van studenten op aan de hand van klasnaam en sorteer op usersname
+
+            foreach ($new as $students){
+                $temp[] =  array('username'=> $students->username, "userImgUrl" => $students->userImgUrl); // voeg studenten sites toe aan temp array
+            }
+
+            $website[] = array("Klas"=>$class->class, "Site"=>$temp);// voeg klas en temp toe aan website array
+        }
 
 
-        );
+        return view('websitesstudenten', ['Websites'=>$website]);
 
-        return view('websitesstudenten', ['Websites'=>$websites]);
+
+//        $websites = array(
+//            array("Klas"=>"APP16A1","Site"=>array(
+//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
+//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
+//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
+//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
+//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
+//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"))
+//            ),
+//            array("Klas"=>"APP16A2","Site"=>array(
+//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
+//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
+//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
+//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
+//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
+//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
+//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
+//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
+//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
+//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
+//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
+//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"))
+//            ),
+//            array("Klas"=>"APP17","Site"=>array(
+//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
+//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
+//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
+//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
+//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
+//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
+//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
+//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
+//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"))
+//            ),
+//        );
+
     }
 
     /**
