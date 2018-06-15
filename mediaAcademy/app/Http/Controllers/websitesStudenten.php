@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Classes;
-use App\Student_Website;
 use App\StudentWebsite;
 use Illuminate\Http\Request;
 
@@ -25,7 +24,7 @@ class websitesStudenten extends Controller
             $new = StudentWebsite::where('class', $class->class)->orderByRaw("username DESC")->get();// haal de websites van studenten op aan de hand van klasnaam en sorteer op usersname
 
             foreach ($new as $students){
-                $temp[] =  array('username'=> $students->username, "userImgUrl" => $students->userImgUrl); // voeg studenten sites toe aan temp array
+                $temp[] =  array('username'=> $students->username, "userImgUrl" => $students->userImgUrl, "userlink" => $students->userlink); // voeg studenten sites toe aan temp array
             }
 
             $website[] = array("Klas"=>$class->class, "Site"=>$temp);// voeg klas en temp toe aan website array
@@ -33,43 +32,6 @@ class websitesStudenten extends Controller
 
 
         return view('websitesstudenten', ['Websites'=>$website]);
-
-
-//        $websites = array(
-//            array("Klas"=>"APP16A1","Site"=>array(
-//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"))
-//            ),
-//            array("Klas"=>"APP16A2","Site"=>array(
-//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"))
-//            ),
-//            array("Klas"=>"APP17","Site"=>array(
-//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"),
-//                array('username'=> "LVoort", "userImgUrl" => "https://www.newdeveloper.nl/misc/browserimg2/small/lvoort_s.png"))
-//            ),
-//        );
 
     }
 
