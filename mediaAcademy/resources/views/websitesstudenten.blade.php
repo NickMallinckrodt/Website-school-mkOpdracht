@@ -8,7 +8,7 @@
 
         <div class="row">
 
-
+            <div class="container">
             @foreach ($Websites as $website)
                 <div class="row">
                     <div class="col-12">
@@ -18,15 +18,16 @@
                     </div>
                 </div>
 
-                <div class="row">
-                    @foreach($website['Site'] as $site)
-                        <a href="https://www.google.com" target="_blank" class="col-3">
-                            <img src="{{$site['Image']}}" class="website-student">
-                            <center>{{$site['Name']}}</center>
-                        </a>
-                    @endforeach
-                </div>
+                    <div class="row justify-content-center">
+                        @foreach($website['Site'] as $site)
+                            <a href="{{$site["userlink"]}}" target="_blank" class="col-2">
+                                <img src="{{$site['userImgUrl']}}" class="website-student">
+                                <center>{{$site['username']}}</center>
+                            </a>
+                        @endforeach
+                    </div>
+
             @endforeach
-        </div>
+        </div></div>
     </div>
 @endsection

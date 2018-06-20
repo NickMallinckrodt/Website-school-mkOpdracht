@@ -9995,8 +9995,7 @@ a.text-dark:focus {
 }
 
 body {
-	background-color: #dc3545;
-  // background: url("/img/background.jpg") 100vw 100vh fixed;
+  background-color: #dc3545;
 }
 
 .navbar-brand img {

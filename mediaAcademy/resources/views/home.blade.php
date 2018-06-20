@@ -18,9 +18,15 @@
             <h1 class="header">Media Academy</h1>
             <hr>
                 <p>
-
+                    Heb jij een idee voor een eigen evenement, een talent voor vormgeving of misschien duik jij graag de
+                    code in? Dan is de Media academy voor jou. Hier kun je namelijk kiezen tussen de opleidingen Media manager,
+                    Media vormgever en Applicatie ontwikkelaar. Vanaf de eerste dag van je opleiding werk je samen met je
+                    mede studenten. Bij de Media academy ben je geen student maar een collega. In een leerwerkomgeving kun
+                    je daarnaast al vast praktijkervaring opdoen met opdrachten voor echte opdrachtgevers, met echte deadlines
+                    en budgetten. Zo willen wij je het vak leren, maar we willen je vooral inspireren en motiveren. Zo leg je
+                    elke dag de lat wat hoger en ben je zelf de regisseur van je carrière.
                 </p>
-                  <br>
+            <br>
                 <hr>
         </div>
 
@@ -39,6 +45,8 @@
                     <div class="media_label">
                         <div class="media_tile">
                             <span class="media_tile_content">
+                                 Media manager
+                                <small>|</small>
                                  BOL
                                 <small>|</small>
                                  Niveau 4
@@ -60,6 +68,8 @@
                     <div class="media_label">
                         <div class="media_tile">
                             <span class="media_tile_content">
+                                 Media vormgever
+                                <small>|</small>
                                  BOL
                                 <small>|</small>
                                  Niveau 4
@@ -81,6 +91,8 @@
                     <div class="media_label">
                         <div class="media_tile">
                             <span class="media_tile_content">
+                                 Applicatie ontwikkelaar
+                                <small>|</small>
                                  BOL
                                 <small>|</small>
                                  Niveau 4
