@@ -16,6 +16,11 @@ class IndexController extends Controller
         return view('home');
     }
 
+    public function contact(){
+        return view('contact');
+
+    }
+
     /**
      * Show the form for creating a new resource.
      *

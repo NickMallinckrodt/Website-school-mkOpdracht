@@ -17,7 +17,7 @@
               <br>
             <h1 class="header">Media Academy</h1>
             <hr>
-                <p>
+                <p class="introduction">
                     Heb jij een idee voor een eigen evenement, een talent voor vormgeving of misschien duik jij graag de
                     code in? Dan is de Media academy voor jou. Hier kun je namelijk kiezen tussen de opleidingen Media manager,
                     Media vormgever en Applicatie ontwikkelaar. Vanaf de eerste dag van je opleiding werk je samen met je
@@ -37,7 +37,7 @@
   <div class="tile_container">
 
     <div class="row bg-white">
-        <div class="col-md-6 col-sm-8">
+        <div class="col-md-4 col-sm-8">
             <a href="{{route('mediamanager')}}">
                 <div class="tile_image-container">
                     <img src={{asset('img/mediamanager.jpg')}} alt="Opleiding" class="home_img">
@@ -60,7 +60,7 @@
             </a>
         </div>
 
-        <div class="col-md-6 col-sm-8">
+        <div class="col-md-4 col-sm-8">
             <a href="{{route('mediavormgever')}}">
                 <div class="tile_image-container">
                     <img src={{asset('img/mediavormgever.jpg')}} alt="Opleiding" class="home_img">
@@ -83,7 +83,7 @@
             </a>
         </div>
 
-        <div class="col-md-6 col-sm-8">
+        <div class="col-md-4 col-sm-8">
             <a href="{{route('applicatie')}}">
                 <div class="tile_image-container">
                     <img src={{asset('img/applicatie.jpg')}} alt="Opleiding" class="home_img">

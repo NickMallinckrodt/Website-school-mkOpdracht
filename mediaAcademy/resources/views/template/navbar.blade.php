@@ -28,6 +28,10 @@
             <li class="nav-item active">
                 <a class="nav-link " href="{{ route('studenten-websites') }}">Websites studenten</a>
             </li>
+
+            <li class="nav-item active">
+                <a class="nav-link " href="{{ route('contact') }}">contact</a>
+            </li>
         </ul>
     </div>
 

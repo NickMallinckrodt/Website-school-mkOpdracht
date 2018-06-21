@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'IndexController@index')->name('index');
+Route::get('/contact' , 'IndexController@contact')->name('contact');
 
 Route::get('/docenten' , 'DocentenController@index')->name('docenten');
 
