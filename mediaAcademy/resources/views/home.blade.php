@@ -53,7 +53,6 @@
                                  BOL
                                 <small>|</small>
                                  Niveau 4
-                                <small>|</small>
                             </span>
                         </div>
                     </div>
@@ -79,7 +78,6 @@
                                  BOL
                                 <small>|</small>
                                  Niveau 4
-                                <small>|</small>
                             </span>
                         </div>
                     </div>
@@ -104,7 +102,6 @@
                                  BOL
                                 <small>|</small>
                                  Niveau 4
-                                <small>|</small>
                             </span>
                         </div>
                     </div>
