@@ -40,7 +40,10 @@
         <div class="col-md-4 col-sm-8">
             <a href="{{route('mediamanager')}}">
                 <div class="tile_image-container">
-                    <img src={{asset('img/mediamanager.jpg')}} alt="Opleiding" class="home_img">
+                    <div class="icon_wrapper">
+                        <img src={{asset('img/icons/icon_manager.png')}} alt="Opleiding" class="home_icon">
+
+                    </div>
 
                     <div class="media_label">
                         <div class="media_tile">
@@ -55,7 +58,7 @@
                         </div>
                     </div>
 
-                     <div class="media_tile_bar"></div>
+                     <div class="media_tile_bar_custom media_tile_bar_custom_manage"></div>
                 </div>
             </a>
         </div>
@@ -63,7 +66,10 @@
         <div class="col-md-4 col-sm-8">
             <a href="{{route('mediavormgever')}}">
                 <div class="tile_image-container">
-                    <img src={{asset('img/mediavormgever.jpg')}} alt="Opleiding" class="home_img">
+                    <div class="icon_wrapper">
+                        <img src={{asset('img/icons/icon_vormgever.png')}} alt="Opleiding" class="home_icon">
+
+                    </div>
 
                     <div class="media_label">
                         <div class="media_tile">
@@ -78,7 +84,7 @@
                         </div>
                     </div>
 
-                    <div class="media_tile_bar"></div>
+                    <div class="media_tile_bar_custom media_tile_bar_custom_design"></div>
                 </div>
             </a>
         </div>
@@ -86,8 +92,10 @@
         <div class="col-md-4 col-sm-8">
             <a href="{{route('applicatie')}}">
                 <div class="tile_image-container">
-                    <img src={{asset('img/applicatie.jpg')}} alt="Opleiding" class="home_img">
+                    <div class="icon_wrapper">
+                        <img src={{asset('img/icons/icon_applicatie.png')}} alt="Opleiding" class="home_icon">
 
+                    </div>
                     <div class="media_label">
                         <div class="media_tile">
                             <span class="media_tile_content">
@@ -101,7 +109,7 @@
                         </div>
                     </div>
 
-                    <div class="media_tile_bar"></div>
+                    <div class="media_tile_bar_custom media_tile_bar_custom_application"></div>
                 </div>
             </a>
         </div>

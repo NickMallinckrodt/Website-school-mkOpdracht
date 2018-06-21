@@ -9995,7 +9995,10 @@ a.text-dark:focus {
 }
 
 body {
-  background-color: #dc3545;
+  background-image: url("/img/icoontjes.png");
+  background-attachment: fixed;
+  background-size: 200px auto;
+  background-color: #a8d7ff;
 }
 
 .navbar-brand img {
@@ -10005,6 +10008,46 @@ body {
 .banner {
   height: 300px;
   background: url("https://pbs.twimg.com/profile_images/2435763356/image_400x400.jpg") 100vw 300px;
+}
+
+.media_tile_bar_custom {
+  width: 100%;
+  height: 12px;
+}
+
+.media_tile_bar_custom_application {
+  background-color: #156d93;
+}
+
+.media_tile_bar_custom_design {
+  background-color: #5a4776;
+}
+
+.media_tile_bar_custom_manage {
+  background-color: #e7165f;
+}
+
+.home_icon {
+  width: 40%;
+  max-width: 50%;
+  color: red;
+}
+
+.icon_wrapper {
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tile_image-container {
+  padding-bottom: 30px !important;
 }
 
 .navbar-laravel {
